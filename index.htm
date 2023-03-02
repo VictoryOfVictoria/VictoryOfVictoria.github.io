@@ -10,8 +10,7 @@
         var port = 8083;
 
         function onFailure(message) {
-            //setTimeout(MQTTconnect, reconnectTimeout);
-            document.getElementById("Luz 1").innerHTML = "todo fallo" + message; 
+            setTimeout(MQTTconnect, reconnectTimeout);
         }
 
         function onMessageArrived(msg) {
